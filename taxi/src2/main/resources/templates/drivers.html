@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drivers</title>
+</head>
+<body>
+    <h2>Drivers</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="driver : ${drivers}">
+            <td th:text="${driver.name}"></td>
+            <td th:text="${driver.phoneNumber}"></td>
+            <td th:text="${driver.email}"></td>
+        </tr>
+    </table>
+</body>
+</html>
